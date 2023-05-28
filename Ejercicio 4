@@ -1,0 +1,22 @@
+package ejemplo;
+import java.util.Scanner;
+public class Ejemplo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		// Programa que calcula el tiempo que tarda en caer un objeto desde una altura.
+		Scanner entrada = new Scanner (System.in);
+		System.out.println("Este programa calcula el tiempo que tarda en caer un objeto desde una altura");
+		
+		System.out.println("Por favor, introduzca la altura (metros): ");
+		System.out.print("=>");
+		double altura = entrada.nextInt();
+		double tiempo = Math.sqrt((2*altura)/9.81);
+		System.out.println("El tiempo que tarda en caer un "
+				+ "objeto de una altura de "+ altura +" metros " + " es: "+ tiempo + " segundos");
+
+	}
+
+}
