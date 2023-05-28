@@ -1,0 +1,29 @@
+package ejemplo;
+import java.util.Scanner;
+public class Ejemplo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+    //Este programa resuelve una ecuación de primer grado del tipo ax + b = 0
+		Scanner entrada = new Scanner (System.in);
+		System.out.println("Este programa resuelve ecuaciones de primer grado tipo"
+				+ "ax + b = 0");
+		
+		System.out.println("Por favor, introduzca el valor de a: ");
+		System.out.println("=>");
+		int a = entrada.nextInt();
+		System.out.println("Por favor, introduzca el valor de b: ");
+		System.out.println("=>");
+		int b = entrada.nextInt();
+		
+		double x = (double) -b/a;
+	
+		if (a == 0 || b == 0) {
+			System.out.println("Esa ecuación no tiene solución real.");
+		} else {
+			System.out.println("x = "+x);
+		}
+	}
+
+}
