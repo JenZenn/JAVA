@@ -10,7 +10,7 @@ public class Ejemplo {
     
 		Scanner entrada = new Scanner (System.in);
 		System.out.println("Intruduce una hora entre (0-23): ");
-		System.out.println("=>");
+		System.out.print("=>");
 		int hora = entrada.nextInt();
 		
 			
