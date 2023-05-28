@@ -1,0 +1,29 @@
+package ejemplo;
+import java.util.Scanner;
+public class Ejemplo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Programa que calcula el salario semanal
+    
+		Scanner entrada = new Scanner (System.in);
+		System.out.println("Por favor, introduzca el número de horas trabajadas durante la semana:  ");
+		System.out.println("=>");
+		int horasT = entrada.nextInt();
+		
+		if(horasT > 0 && horasT <=40) {
+			int sueldo = (horasT * 12);
+			System.out.println("El sueldo semanal que le corresponde es de "+ sueldo);
+		} else {
+			if (horasT >= 41) {
+				int sueldo = (horasT * 16);
+				System.out.println("El sueldo semanal que le corresponde es de "+ sueldo);
+			}	
+
+		}
+			
+		
+
+	}
+
+}
