@@ -1,0 +1,17 @@
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		// Programa que dice cuál es la última cifra de un número entero.
+		Scanner entrada = new Scanner (System.in);
+		System.out.println("Por favor, introduzca un número entero: ");
+		System.out.print("=>");
+		int num = entrada.nextInt();
+		int cifra1 = num%10;
+		System.out.println("La última cifra del número ingresado es: "+ cifra1);
+		
+		
+	}
+
+}
